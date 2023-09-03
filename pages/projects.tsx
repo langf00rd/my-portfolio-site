@@ -155,7 +155,7 @@ export default function Home() {
               >
                 <Image
                   src={project.image}
-                  alt=""
+                  alt={`screenshot of ${project.title} project`}
                   width={600}
                   height={600}
                   className="object-contain hover:grayscale cursor-pointer transition-all rounded-md bg-[#F2F2F2]"

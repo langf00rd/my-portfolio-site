@@ -74,9 +74,9 @@ export default function MainLayout(props: PropsWithChildren): JSX.Element {
           {/* <p className="font-[500] hidden md:block font-[600]">{getCurrentTime()}</p> */}
         </div>
       </header>
-      <div className="flex pt-10 md:pt-[80px] max-w-[1700px] px-5 mx-auto items-start">
+      <div className="flex pt-10 md:pt-[80px] max-w-[1700px] px-5 mx-auto items-start pb-[3rem]">
         {showMenu && (
-          <div className="md:top-[100px] h-screen top-0 md:top-[70px] w-[500px] md:sticky p-5 fixed bg-transluscentWhite backdrop-blur-md">
+          <div className="md:top-[100px] h-screen top-0 md:top-[70px] w-[500px] md:sticky p-5 fixed bg-white">
             <motion.div initial={{ opacity: 0, x: -100 }} animate={{ opacity: 1, x: 0 }}>
               <ul className="grid gap-4">
                 {ROUTES.map((route, index) => (
@@ -98,7 +98,7 @@ export default function MainLayout(props: PropsWithChildren): JSX.Element {
         {props.children}
       </div>
       <footer
-        className={`text-sm text-textGrey flex items-center justify-center mt-20 py-5 ${
+        className={`text-sm text-textGrey flex items-center justify-center py-5 pb-20 ${
           router.pathname !== ROUTES[2] && "border-t"
         }`}
       >
