@@ -4,7 +4,6 @@ import { PropsWithChildren, useState } from "react";
 import { HiOutlineMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
-import { getCurrentTime } from "~/utils/getCurrentTime.uitl";
 import useScroll from "~/hooks/useScroll.hook";
 
 const inter = Inter({ subsets: ["latin"] });
