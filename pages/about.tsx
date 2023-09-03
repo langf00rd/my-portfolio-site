@@ -1,9 +1,11 @@
+import Meta from "~/components/Meta";
 import MainLayout from "~/layouts/main.layout";
 
 export default function About() {
   return (
     <MainLayout>
       <>
+        <Meta title="about me ツ" />
         <div className="grid gap-5">
           {/* <p className="text-[3.5rem] leading-[1.5] font-bold text-brand">
               passionate

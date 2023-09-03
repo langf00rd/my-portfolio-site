@@ -2,6 +2,7 @@ import MainLayout from "~/layouts/main.layout";
 import Image from "next/image";
 import Link from "next/link";
 import { FiArrowUpRight } from "react-icons/fi";
+import Meta from "~/components/Meta";
 
 const PROJECTS: {
   title: string;
@@ -15,7 +16,7 @@ const PROJECTS: {
     year: {
       from: "2022",
     },
-    image: "/images/vapourware-studios.png",
+    image: "/assets/images/projects/vapourware-studios.png",
     link: "https://www.vapourwarestudios.co/",
     description: "a website for a software and creative design agency",
   },
@@ -25,7 +26,7 @@ const PROJECTS: {
       from: "2022",
       to: "2023",
     },
-    image: "/images/wedey.png",
+    image: "/assets/images/projects/wedey.png",
     link: "https://www.wedey.co/",
     description: "we bringing the local markets to you",
   },
@@ -35,7 +36,7 @@ const PROJECTS: {
       from: "2022",
       to: "2023",
     },
-    image: "/images/magna.png",
+    image: "/assets/images/projects/magna.png",
     link: "https://www.buymagna.com/",
     description:
       "a free mint storytelling nft project aimed at onboarding newbies into the web3 ecosystem",
@@ -46,7 +47,7 @@ const PROJECTS: {
       from: "2022",
       to: "2023",
     },
-    image: "/images/byllupslisten.png",
+    image: "/assets/images/projects/byllupslisten.png",
     link: "https://bryllupslisten.no/",
     description:
       "The wedding list is a wishlist that allows you to gather your wishes in one place and easily share the list with the wedding guests",
@@ -57,7 +58,7 @@ const PROJECTS: {
       from: "2022",
       to: "2023",
     },
-    image: "/images/waverpass.png",
+    image: "/assets/images/projects/waverpass.png",
     link: "https://www.waverpass.com/",
     description:
       "1,000 passes available for mint, owning a Waver Pass grants holders access to products, tools and projects exclusively built and owned by Openwaver for free",
@@ -68,7 +69,7 @@ const PROJECTS: {
       from: "2022",
       to: "2023",
     },
-    image: "/images/tv-anywhere-africa.png",
+    image: "/assets/images/projects/tv-anywhere-africa.png",
     link: "https://tvanywhereafrica.vercel.app/",
     description:
       "a platform for delivering high-quality, live and on-demand streaming content",
@@ -79,7 +80,7 @@ const PROJECTS: {
       from: "2022",
       to: "2023",
     },
-    image: "/images/ordinary-strangers-nft.png",
+    image: "/assets/images/projects/ordinary-strangers-nft.png",
     link: "https://www.ordinarystrangers.com/",
     description: "an nft project's minting and landing page",
   },
@@ -89,7 +90,7 @@ const PROJECTS: {
       from: "2022",
       to: "2023",
     },
-    image: "/images/nft-aio.png",
+    image: "/assets/images/projects/nft-aio.png",
     link: "https://nft-aio.vercel.app/",
     description: "a landing page for an nft project",
   },
@@ -99,7 +100,7 @@ const PROJECTS: {
       from: "2022",
       to: "2023",
     },
-    image: "/images/mcini-tv.png",
+    image: "/assets/images/projects/mcini-tv.png",
     link: "https://mcini.tv/",
     description: "a web app for streaming movies",
   },
@@ -109,7 +110,7 @@ const PROJECTS: {
       from: "2022",
       to: "2023",
     },
-    image: "/images/richfaith-recruitment-agency.png",
+    image: "/assets/images/projects/richfaith-recruitment-agency.png",
     link: "https://richfaithrecruitment.com/",
     description:
       "a company that connects talented individuals to international opportunities in a variety of industries",
@@ -119,6 +120,7 @@ const PROJECTS: {
 export default function Home() {
   return (
     <MainLayout>
+      <Meta title="my projects ツ" />
       <div className="flex flex-col w-full">
         {PROJECTS.map((project, index) => (
           <div

@@ -1,10 +1,12 @@
 import MainLayout from "~/layouts/main.layout";
 import Image from "next/image";
+import Meta from "~/components/Meta";
 
 export default function Home() {
   return (
     <MainLayout>
       <>
+        <Meta title="home ツ" />
         <div className="grid gap-5">
           {/* <p className="text-[3.5rem] leading-[1.5] font-bold text-brand">
               passionate
