@@ -41,6 +41,7 @@ export default function MainLayout(props: PropsWithChildren): JSX.Element {
               className="cursor-pointer hover:text-brand transition-all"
             />
           )}
+
           {!scrolledDown ? (
             <div>
               <motion.p
@@ -48,18 +49,32 @@ export default function MainLayout(props: PropsWithChildren): JSX.Element {
                 animate={{ width: "100%" }}
                 className="overflow-hidden h-[22px] transition-all"
               >
-                langford ツ <span className="text-brand">•</span>
-                <span className="text-textGrey"> software developer</span>
+                langford
+                <span className="text-textGrey">
+                  {router.pathname.replace(/^a-zA-Z0-9 ]/g, "")}
+                </span>
               </motion.p>
             </div>
           ) : (
-            <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }}>
-              <p className="text-2xl">
-                {router.pathname.replace("/", "").replace("-", "")} ツ
-              </p>
-            </motion.div>
+            <>
+              <div className="w-[50px]">
+                <>
+                  <motion.p
+                    initial={{ width: "0" }}
+                    animate={{ width: "100%" }}
+                    className="overflow-hidden h-[25px] transition-all text-2xl"
+                  >
+                    ツ
+                  </motion.p>
+                </>
+              </div>
+            </>
           )}
-          <p className="font-[500] hidden md:block">{getCurrentTime()}</p>
+
+          <p>
+            <span className="text-textGrey"> software developer</span>
+          </p>
+          {/* <p className="font-[500] hidden md:block font-[600]">{getCurrentTime()}</p> */}
         </div>
       </header>
       <div className="flex pt-[100px] max-w-[1700px] px-5 mx-auto items-start">
