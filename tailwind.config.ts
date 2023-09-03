@@ -11,6 +11,7 @@ const config: Config = {
     extend: {
       colors: {
         brand: "#008cff",
+        transluscentWhite: "#ffffffb5",
         body: "#F7F7F7",
         textGrey: "#a4a4a4",
       },
