@@ -17,8 +17,17 @@ const PROJECTS: {
     },
     image: "/images/vapourware-studios.png",
     link: "https://www.vapourwarestudios.co/",
-    description:
-      "this app has no description because its random, and i am too lazy to open another tab to search for a lorem ipsum generator, and coming to thing of it, that would have been a much better option",
+    description: "a website for a software and creative design agency",
+  },
+  {
+    title: "wedey",
+    year: {
+      from: "2022",
+      to: "2023",
+    },
+    image: "/images/wedey.png",
+    link: "https://www.wedey.co/",
+    description: "we bringing the local markets to you",
   },
   {
     title: "magna nft",
@@ -29,29 +38,7 @@ const PROJECTS: {
     image: "/images/magna.png",
     link: "https://www.buymagna.com/",
     description:
-      "this app has no description because its random, and i am too lazy to open another tab to search for a lorem ipsum generator, and coming to thing of it, that would have been a much better option",
-  },
-  {
-    title: "tv anywhwere",
-    year: {
-      from: "2022",
-      to: "2023",
-    },
-    image: "/images/tv-anywhere-africa.png",
-    link: "https://tvanywhereafrica.vercel.app/",
-    description:
-      "this app has no description because its random, and i am too lazy to open another tab to search for a lorem ipsum generator, and coming to thing of it, that would have been a much better option",
-  },
-  {
-    title: "wedey",
-    year: {
-      from: "2022",
-      to: "2023",
-    },
-    image: "/images/wedey.png",
-    link: "https://www.wedey.co/",
-    description:
-      "this app has no description because its random, and i am too lazy to open another tab to search for a lorem ipsum generator, and coming to thing of it, that would have been a much better option",
+      "a free mint storytelling nft project aimed at onboarding newbies into the web3 ecosystem",
   },
   {
     title: "brylluslisten",
@@ -62,40 +49,7 @@ const PROJECTS: {
     image: "/images/byllupslisten.png",
     link: "https://bryllupslisten.no/",
     description:
-      "this app has no description because its random, and i am too lazy to open another tab to search for a lorem ipsum generator, and coming to thing of it, that would have been a much better option",
-  },
-  {
-    title: "ordinary strangers nft",
-    year: {
-      from: "2022",
-      to: "2023",
-    },
-    image: "/images/ordinary-strangers-nft.png",
-    link: "https://www.ordinarystrangers.com/",
-    description:
-      "this app has no description because its random, and i am too lazy to open another tab to search for a lorem ipsum generator, and coming to thing of it, that would have been a much better option",
-  },
-  {
-    title: "nft aio",
-    year: {
-      from: "2022",
-      to: "2023",
-    },
-    image: "/images/nft-aio.png",
-    link: "https://nft-aio.vercel.app/",
-    description:
-      "this app has no description because its random, and i am too lazy to open another tab to search for a lorem ipsum generator, and coming to thing of it, that would have been a much better option",
-  },
-  {
-    title: "mcini tv",
-    year: {
-      from: "2022",
-      to: "2023",
-    },
-    image: "/images/mcini-tv.png",
-    link: "https://mcini.tv/",
-    description:
-      "this app has no description because its random, and i am too lazy to open another tab to search for a lorem ipsum generator, and coming to thing of it, that would have been a much better option",
+      "The wedding list is a wishlist that allows you to gather your wishes in one place and easily share the list with the wedding guests",
   },
   {
     title: "waverpass nft",
@@ -106,7 +60,48 @@ const PROJECTS: {
     image: "/images/waverpass.png",
     link: "https://www.waverpass.com/",
     description:
-      "this app has no description because its random, and i am too lazy to open another tab to search for a lorem ipsum generator, and coming to thing of it, that would have been a much better option",
+      "1,000 passes available for mint, owning a Waver Pass grants holders access to products, tools and projects exclusively built and owned by Openwaver for free",
+  },
+  {
+    title: "tv anywhwere africa",
+    year: {
+      from: "2022",
+      to: "2023",
+    },
+    image: "/images/tv-anywhere-africa.png",
+    link: "https://tvanywhereafrica.vercel.app/",
+    description:
+      "a platform for delivering high-quality, live and on-demand streaming content",
+  },
+  {
+    title: "ordinary strangers nft",
+    year: {
+      from: "2022",
+      to: "2023",
+    },
+    image: "/images/ordinary-strangers-nft.png",
+    link: "https://www.ordinarystrangers.com/",
+    description: "an nft project's minting and landing page",
+  },
+  {
+    title: "nft aio",
+    year: {
+      from: "2022",
+      to: "2023",
+    },
+    image: "/images/nft-aio.png",
+    link: "https://nft-aio.vercel.app/",
+    description: "a landing page for an nft project",
+  },
+  {
+    title: "mcini tv",
+    year: {
+      from: "2022",
+      to: "2023",
+    },
+    image: "/images/mcini-tv.png",
+    link: "https://mcini.tv/",
+    description: "a web app for streaming movies",
   },
   {
     title: "richfaith recruitment agency",
@@ -117,7 +112,7 @@ const PROJECTS: {
     image: "/images/richfaith-recruitment-agency.png",
     link: "https://richfaithrecruitment.com/",
     description:
-      "this app has no description because its random, and i am too lazy to open another tab to search for a lorem ipsum generator, and coming to thing of it, that would have been a much better option",
+      "a company that connects talented individuals to international opportunities in a variety of industries",
   },
 ];
 
@@ -144,10 +139,10 @@ export default function Home() {
                   href={project.link}
                   rel="noreferrer"
                   target="_blank"
-                  className="flex items-center w-max mt-5 transition-all hover:text-brand"
+                  className="flex items-center w-max mt-5 transition-all hover:text-brand text-textGrey text-sm"
                 >
-                  <p>checkout project</p>
-                  <FiArrowUpRight className="ml-2" />
+                  <p>see project</p>
+                  <FiArrowUpRight className="ml-1" />
                 </Link>
               )}
             </div>

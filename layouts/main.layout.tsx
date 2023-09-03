@@ -25,7 +25,7 @@ export default function MainLayout(props: PropsWithChildren): JSX.Element {
 
   return (
     <main className={inter.className}>
-      <header className="fixed top-0 left-0 w-screen border-b flex items-center justify-center h-[70px] z-10 select-none bg-transluscentWhite backdrop-blur-md">
+      <header className="fixed bottom-0 md:top-0 left-0 w-screen border-t md:border-b flex items-center justify-center h-[50px] z-10 select-none bg-transluscentWhite backdrop-blur-md">
         <div className="h-full w-full px-5 flex items-center justify-between">
           {!showMenu ? (
             <HiOutlineMenuAlt4
@@ -48,7 +48,6 @@ export default function MainLayout(props: PropsWithChildren): JSX.Element {
                 animate={{ width: "100%" }}
                 className="overflow-hidden h-[22px] transition-all"
               >
-                langford
                 <span className="text-textGrey">
                   {router.pathname.replace(/^a-zA-Z0-9 ]/g, "")}
                 </span>
@@ -61,7 +60,7 @@ export default function MainLayout(props: PropsWithChildren): JSX.Element {
                   <motion.p
                     initial={{ width: "0" }}
                     animate={{ width: "100%" }}
-                    className="overflow-hidden h-[25px] transition-all text-2xl"
+                    className="overflow-hidden transition-all text-xl md:text-2xl"
                   >
                     ツ
                   </motion.p>
@@ -69,16 +68,15 @@ export default function MainLayout(props: PropsWithChildren): JSX.Element {
               </div>
             </>
           )}
-
           <p>
             <span className="text-textGrey"> software developer</span>
           </p>
           {/* <p className="font-[500] hidden md:block font-[600]">{getCurrentTime()}</p> */}
         </div>
       </header>
-      <div className="flex pt-[100px] max-w-[1700px] px-5 mx-auto items-start">
+      <div className="flex pt-10 md:pt-[80px] max-w-[1700px] px-5 mx-auto items-start">
         {showMenu && (
-          <div className="md:top-[100px] top-[70px] w-[500px] md:sticky p-5 fixed bg-transluscentWhite backdrop-blur-md">
+          <div className="md:top-[100px] h-screen top-0 md:top-[70px] w-[500px] md:sticky p-5 fixed bg-transluscentWhite backdrop-blur-md">
             <motion.div initial={{ opacity: 0, x: -100 }} animate={{ opacity: 1, x: 0 }}>
               <ul className="grid gap-4">
                 {ROUTES.map((route, index) => (
