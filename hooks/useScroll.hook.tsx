@@ -2,12 +2,18 @@ import { useState, useEffect } from "react";
 
 function useScroll() {
   const [scrolledDown, setScrolledDown] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState<{ x: number; y: number }>();
 
   useEffect(() => {
     let prevScrollY = window.scrollY;
 
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
+
+      setScrollPosition({
+        x: window.scrollX,
+        y: window.scrollY,
+      });
 
       if (currentScrollY > prevScrollY) {
         // Scrolling down
@@ -29,6 +35,7 @@ function useScroll() {
 
   return {
     scrolledDown,
+    scrollPosition,
   };
 }
 

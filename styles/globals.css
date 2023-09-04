@@ -2,9 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-/* html {
-  @apply bg-body;
-} */
+html {
+  @apply text-[#2c3e50];
+  line-height: 34px;
+  letter-spacing: -0.28px;
+  text-align: start;
+  vertical-align: baseline;
+  word-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
 
 ::selection {
   @apply bg-[#d8ecfc] text-brand;
@@ -42,4 +60,8 @@
   100% {
     background-position: 100% 50%;
   }
+}
+
+a {
+  @apply text-textGrey hover:text-brand transition-all;
 }
