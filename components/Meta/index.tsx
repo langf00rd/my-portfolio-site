@@ -3,7 +3,7 @@ import Head from "next/head";
 
 const metaContent = {
   title: "langford ツ software developer",
-  description: "hey, i'm langford. a software developer with over 4 years of experience",
+  description: "hey, i'm langford. a website & mobile app developer",
   image:
     "https://res.cloudinary.com/follio/image/upload/v1693761848/fbnrxbnygh7azprri4bf.png",
   imageAlt: "langford's portfolio banner image",
