@@ -13,6 +13,7 @@ html {
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -31,13 +32,7 @@ h6 {
 .gradient-text {
   /* background-image: linear-gradient(90deg, var(--start-color), var(--end-color)); */
 
-  background: linear-gradient(
-    to right,
-    #ff4d4d 20%,
-    #f9cb28 30%,
-    #00dfd8 70%,
-    #764ada 80%
-  );
+  background: linear-gradient(to right, #f9cb28 30%, #00dfd8 70%, #764ada 80%);
   /* background: linear-gradient(
     to right,
     #7953cd 20%,

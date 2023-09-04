@@ -2,7 +2,20 @@ import { useState, useEffect } from "react";
 
 function useScroll() {
   const [scrolledDown, setScrolledDown] = useState(false);
-  const [scrollPosition, setScrollPosition] = useState<{ x: number; y: number }>();
+  const [scrollPosition, setScrollPosition] = useState<{ x: number; y: number }>({
+    x: 0,
+    y: 0,
+  });
+
+  /** scroll to top of page */
+  function scrollUp() {
+    window.scrollTo(0, 0);
+  }
+
+  /** scroll to bottom of page */
+  function scrollDown() {
+    window.scrollTo(0, document.body.scrollHeight);
+  }
 
   useEffect(() => {
     let prevScrollY = window.scrollY;
@@ -36,6 +49,8 @@ function useScroll() {
   return {
     scrolledDown,
     scrollPosition,
+    scrollDown,
+    scrollUp,
   };
 }
 
