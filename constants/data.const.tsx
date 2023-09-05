@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { FiArrowUpRight, FiGithub } from "react-icons/fi";
-import { FaInstagram } from "react-icons/fa";
+import { FaDev, FaInstagram } from "react-icons/fa";
 import { RxTwitterLogo } from "react-icons/rx";
 import Image from "next/image";
 import { HiOutlineMail } from "react-icons/hi";
@@ -21,6 +21,11 @@ export const SOCIALS: {
     label: "instagram",
     link: "https://instagram.com/langford_dev",
     icon: <FaInstagram size={20} />,
+  },
+  {
+    label: "dev.to",
+    link: "https://dev.to/langford_dev",
+    icon: <FaDev size={20} />,
   },
   {
     label: "x",
@@ -47,21 +52,18 @@ export const PROJECTS: {
 }[] = [
   {
     title: "vapourware studios",
-
     image: "/assets/images/projects/vapourware-studios.png",
     link: "https://www.vapourwarestudios.co/",
     description: "a website for a software and creative design agency",
   },
   {
     title: "wedey",
-
     image: "/assets/images/projects/wedey.png",
     link: "https://www.wedey.co/",
     description: "we bringing the local markets to you",
   },
   {
     title: "magna nft",
-
     image: "/assets/images/projects/magna.png",
     link: "https://www.buymagna.com/",
     description:
@@ -69,7 +71,6 @@ export const PROJECTS: {
   },
   {
     title: "brylluslisten",
-
     image: "/assets/images/projects/byllupslisten.png",
     link: "https://bryllupslisten.no/",
     description:
@@ -77,7 +78,6 @@ export const PROJECTS: {
   },
   {
     title: "waverpass nft",
-
     image: "/assets/images/projects/waverpass.png",
     link: "https://www.waverpass.com/",
     description:
@@ -85,7 +85,6 @@ export const PROJECTS: {
   },
   {
     title: "tv anywhwere africa",
-
     image: "/assets/images/projects/tv-anywhere-africa.png",
     link: "https://tvanywhereafrica.vercel.app/",
     description:
@@ -93,28 +92,24 @@ export const PROJECTS: {
   },
   {
     title: "ordinary strangers nft",
-
     image: "/assets/images/projects/ordinary-strangers-nft.png",
     link: "https://www.ordinarystrangers.com/",
     description: "an nft project's minting and landing page",
   },
   {
     title: "nft aio",
-
     image: "/assets/images/projects/nft-aio.png",
     link: "https://nft-aio.vercel.app/",
     description: "a landing page for an nft project",
   },
   {
     title: "mcini tv",
-
     image: "/assets/images/projects/mcini-tv.png",
     link: "https://mcini.tv/",
     description: "a web app for streaming movies",
   },
   {
     title: "richfaith recruitment agency",
-
     image: "/assets/images/projects/richfaith-recruitment-agency.png",
     link: "https://richfaithrecruitment.com/",
     description:
@@ -133,6 +128,11 @@ export const JOB_EXPERIENCE: { companyName: string; jobTitle: string; years: str
       companyName: "desense co",
       jobTitle: "software developer",
       years: "2021",
+    },
+    {
+      companyName: "coral app",
+      jobTitle: "developer relations",
+      years: "2023",
     },
     {
       companyName: "clever programmer",
@@ -169,12 +169,16 @@ export const JOB_EXPERIENCE: { companyName: string; jobTitle: string; years: str
 export const SKILLS = [
   "next js",
   "react js",
+  "redux",
+  "express",
   "javascript",
+  "heroku",
   "vue js",
   "html",
   "css",
   "typescript",
   "flutter",
+  "electron",
   "react native",
   "dart",
   "tailwind css",
@@ -185,6 +189,7 @@ export const SKILLS = [
   "moralis",
   "mongo db",
   "web3 js",
+  "git",
   "ethers js",
   "node js",
   "responsive design",
