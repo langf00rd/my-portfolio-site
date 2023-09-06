@@ -5,7 +5,22 @@ import { RxTwitterLogo } from "react-icons/rx";
 import Image from "next/image";
 import { HiOutlineMail } from "react-icons/hi";
 import { BiMessageRounded } from "react-icons/bi";
+import { BsArrowRight } from "react-icons/bs";
 import { motion } from "framer-motion";
+
+export const BLOG_POSTS: {
+  date: string;
+  title: string;
+  page: string;
+  animationDuration: number;
+}[] = [
+  {
+    date: "06-09-2023",
+    title: "so you want to become a developer...",
+    page: "/post/so-you-want-to-become-a-developer",
+    animationDuration: 0.1,
+  },
+];
 
 export const SOCIALS: {
   label: string;
@@ -234,23 +249,40 @@ export const MAIN_CONTENT: { left: JSX.Element; right: JSX.Element }[] = [
             </li>
           ))}
         </ul>
-        {/* <div className="flex gap-10 items-center justify-between">
-          <div className="flex-1 flex items-center gap-2">
-            <input
-              className="outline-none border w-full px-2 rounded-md"
-              placeholder="send me an email"
-            />
-            <motion.button
-              initial={{ scale: 0, opacity: 0 }}
-              animate={{ opacity: 1, scale: 1 }}
-              className="bg-black text-white rounded-full outline-none border-none w-[33px] h-[30px] flex items-center justify-center"
-            >
-              <FiArrowUpRight />
-            </motion.button>
-          </div>
-          
-        </div> */}
       </div>
+    ),
+  },
+  {
+    left: <h2 className="text-xl mb-4 md:mb-0">my blog</h2>,
+    right: (
+      <>
+        <ul className="w-max">
+          {BLOG_POSTS.map((post, index: number) => (
+            <motion.li
+              initial={{ opacity: 0, x: -3 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: post.animationDuration }}
+              className="w-full"
+              key={index}
+            >
+              <Link
+                href={post.page}
+                className="py-2 w-full block flex items-center gap-2"
+              >
+                <p>{post.date}</p>
+                <p className="text-black">{post.title}</p>
+              </Link>
+            </motion.li>
+          ))}
+        </ul>
+        <Link
+          href="/blog"
+          className="flex items-center gap-2 mb-4 text-black w-max underline"
+        >
+          <p>read all</p>
+          <BsArrowRight />
+        </Link>
+      </>
     ),
   },
   {
