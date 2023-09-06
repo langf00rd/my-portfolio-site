@@ -3,10 +3,12 @@ import MainLayout from "~/layouts/main.layout";
 import { motion } from "framer-motion";
 import BlogLayout from "~/layouts/blog.layout";
 import { BLOG_POSTS } from "~/constants/data.const";
+import Meta from "~/components/Meta";
 
 export default function Blog(): JSX.Element {
   return (
     <MainLayout>
+      <Meta title="my blog" />
       <BlogLayout title="my blog">
         <ul className="w-max">
           {BLOG_POSTS.map((post, index: number) => (
