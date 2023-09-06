@@ -2,8 +2,6 @@ import { Inter } from "next/font/google";
 import Link from "next/link";
 import { ReactNode } from "react";
 import { motion } from "framer-motion";
-import useScroll from "~/hooks/useScroll.hook";
-import { FiArrowDown, FiArrowUp } from "react-icons/fi";
 import { useRouter } from "next/router";
 import ScrollButtons from "~/components/ScrollButtons";
 

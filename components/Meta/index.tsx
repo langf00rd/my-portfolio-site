@@ -1,5 +1,4 @@
 import Head from "next/head";
-// import Script from "next/script";
 
 const metaContent = {
   title: "langford ツ software developer",
