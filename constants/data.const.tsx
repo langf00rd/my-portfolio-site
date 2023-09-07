@@ -92,11 +92,23 @@ export const PROJECTS: {
       "The wedding list is a wishlist that allows you to gather your wishes in one place and easily share the list with the wedding guests",
   },
   {
+    title: "mcini tv",
+    image: "/assets/images/projects/mcini-tv.png",
+    link: "https://mcini.tv/",
+    description: "a web app for streaming movies",
+  },
+  {
     title: "waverpass nft",
     image: "/assets/images/projects/waverpass.png",
     link: "https://www.waverpass.com/",
     description:
       "1,000 passes available for mint, owning a Waver Pass grants holders access to products, tools and projects exclusively built and owned by Openwaver for free",
+  },
+  {
+    title: "netflix clone",
+    image: "/assets/images/projects/netflix-clone.png",
+    link: "https://netflix-landing-clone.vercel.app/",
+    description: "an online media file type converter",
   },
   {
     title: "tv anywhwere africa",
@@ -112,16 +124,16 @@ export const PROJECTS: {
     description: "an nft project's minting and landing page",
   },
   {
+    title: "skillet web3 interview task",
+    image: "/assets/images/projects/skillet.png",
+    link: "https://skillet-app.vercel.app/",
+    description: "an interview test project for skillet (web3)",
+  },
+  {
     title: "nft aio",
     image: "/assets/images/projects/nft-aio.png",
     link: "https://nft-aio.vercel.app/",
     description: "a landing page for an nft project",
-  },
-  {
-    title: "mcini tv",
-    image: "/assets/images/projects/mcini-tv.png",
-    link: "https://mcini.tv/",
-    description: "a web app for streaming movies",
   },
   {
     title: "richfaith recruitment agency",
@@ -129,12 +141,6 @@ export const PROJECTS: {
     link: "https://richfaithrecruitment.com/",
     description:
       "a company that connects talented individuals to international opportunities in a variety of industries",
-  },
-  {
-    title: "skillet web3 interview task",
-    image: "/assets/images/projects/skillet.png",
-    link: "https://skillet-app.vercel.app/",
-    description: "an interview test project for skillet (web3)",
   },
   {
     title: "pro player",
@@ -152,12 +158,6 @@ export const PROJECTS: {
     title: "convrtr",
     image: "/assets/images/projects/convrtr.png",
     link: "https://convrtr.vercel.app/",
-    description: "an online media file type converter",
-  },
-  {
-    title: "netflix clone",
-    image: "/assets/images/projects/netflix-clone.png",
-    link: "https://netflix-landing-clone.vercel.app/",
     description: "an online media file type converter",
   },
 ];
