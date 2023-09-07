@@ -8,13 +8,16 @@ export default function BlogLayout(props: {
   title: string;
   subtitle?: string;
 }): JSX.Element {
+  const router = useRouter();
   return (
     <>
       <ScrollButtons />
       <div className="max-w-2xl mx-auto">
         <button
           className="flex items-center underline gap-2 mb-4"
-          onClick={() => window.history.back()}
+          onClick={() => {
+            router.pathname === "/blog" ? router.push("/") : router.push("/blog");
+          }}
         >
           <BsArrowLeft />
           <p>back</p>
