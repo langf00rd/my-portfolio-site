@@ -6,7 +6,7 @@ import { BLOG_POSTS } from "~/constants/data.const";
 
 export default function Blog(): JSX.Element {
   return (
-    <MainLayout>
+    <MainLayout metaTitle="my blog">
       <BlogLayout title="my blog">
         <ul className="w-max">
           {BLOG_POSTS.map((post, index: number) => (
