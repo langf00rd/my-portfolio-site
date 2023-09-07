@@ -256,7 +256,7 @@ export const MAIN_CONTENT: { left: JSX.Element; right: JSX.Element }[] = [
     left: <h2 className="text-xl mb-4 md:mb-0">my blog</h2>,
     right: (
       <>
-        <ul className="w-max">
+        <ul className="">
           {BLOG_POSTS.map((post, index: number) => (
             <motion.li
               initial={{ opacity: 0, x: -3 }}
@@ -269,7 +269,7 @@ export const MAIN_CONTENT: { left: JSX.Element; right: JSX.Element }[] = [
                 href={post.page}
                 className="py-2 w-full block flex items-center gap-2"
               >
-                <p>{post.date}</p>
+                <p className="hidden md:block">{post.date}</p>
                 <p className="text-black">{post.title}</p>
               </Link>
             </motion.li>
