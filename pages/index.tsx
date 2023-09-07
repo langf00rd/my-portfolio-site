@@ -4,8 +4,7 @@ import { MAIN_CONTENT } from "~/constants/data.const";
 
 export default function Home() {
   return (
-    <MainLayout showFooter>
-      <Meta title="langford - software developer" />
+    <MainLayout metaTitle="langford - software developer" showFooter>
       <div className="grid gap-[80px]">
         {MAIN_CONTENT.map((content, index) => (
           <div

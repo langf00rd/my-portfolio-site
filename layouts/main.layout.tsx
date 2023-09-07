@@ -4,16 +4,19 @@ import { ReactNode } from "react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import ScrollButtons from "~/components/ScrollButtons";
+import Meta from "~/components/Meta";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function MainLayout(props: {
   showFooter?: boolean;
   children: ReactNode;
+  metaTitle?: string;
 }): JSX.Element {
   const router = useRouter();
   return (
     <main className={`${inter.className} px-5`}>
+      <Meta title={props.metaTitle || "langford - software developer"} />
       <ScrollButtons />
       <div className="max-w-[1300px] mx-auto py-[3.3rem]">{props.children}</div>
       {props.showFooter && (
