@@ -22,7 +22,7 @@ export default function BlogLayout(props: {
           <BsArrowLeft />
           <p>back</p>
         </button>
-        <h2 className="mb-4 md:mb-0 text-2xl">{props.title}</h2>
+        <h1 className="mb-4 md:mb-0 text-2xl">{props.title}</h1>
         <p className="mt-2 text-textGrey">{props.subtitle}</p>
         <div className="w-full mt-10">{props.children}</div>
       </div>
