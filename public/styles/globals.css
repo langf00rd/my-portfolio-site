@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply text-[#2c3e50];
+  line-height: 34px;
+  letter-spacing: -0.28px;
+  text-align: start;
+  vertical-align: baseline;
+  word-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+blockquote {
+  @apply bg-[#f2f2f2] my-10 py-[10px] px-[20px] rounded-[12px] font-[500];
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+::selection {
+  @apply bg-[#d8ecfc] text-brand;
+}
+
+.gradient-text {
+  /* background-image: linear-gradient(90deg, var(--start-color), var(--end-color)); */
+
+  background: linear-gradient(to right, #f9cb28 30%, #00dfd8 70%, #764ada 80%);
+  /* background: linear-gradient(
+    to right,
+    #7953cd 20%,
+    #00affa 30%,
+    #0190cd 70%,
+    #764ada 80%
+  ); */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 5s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+a {
+  @apply text-textGrey hover:text-brand transition-all;
+}

@@ -130,6 +130,36 @@ export const PROJECTS: {
     description:
       "a company that connects talented individuals to international opportunities in a variety of industries",
   },
+  {
+    title: "skillet web3 interview task",
+    image: "/assets/images/projects/skillet.png",
+    link: "https://skillet-app.vercel.app/",
+    description: "an interview test project for skillet (web3)",
+  },
+  {
+    title: "pro player",
+    image: "/assets/images/projects/pro-player.png",
+    link: "https://pro-player.vercel.app/",
+    description: "an hls live stream react video player component with drm support",
+  },
+  {
+    title: "super dev blog",
+    image: "/assets/images/projects/super-dev.png",
+    link: "https://superdev-blog.vercel.app/",
+    description: "my other blog website",
+  },
+  {
+    title: "convrtr",
+    image: "/assets/images/projects/convrtr.png",
+    link: "https://convrtr.vercel.app/",
+    description: "an online media file type converter",
+  },
+  {
+    title: "netflix clone",
+    image: "/assets/images/projects/netflix-clone.png",
+    link: "https://netflix-landing-clone.vercel.app/",
+    description: "an online media file type converter",
+  },
 ];
 
 export const JOB_EXPERIENCE: { companyName: string; jobTitle: string; years: string }[] =

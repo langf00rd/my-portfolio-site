@@ -1,5 +1,4 @@
 import MainLayout from "~/layouts/main.layout";
-import Meta from "~/components/Meta";
 import { MAIN_CONTENT } from "~/constants/data.const";
 
 export default function Home() {
