@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import ScrollButtons from "~/components/ScrollButtons";
 import Meta from "~/components/Meta";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,6 +18,7 @@ export default function MainLayout(props: {
   return (
     <main className={`${inter.className} px-5`}>
       <Meta title={props.metaTitle || "langford - software developer"} />
+      <Analytics />
       <ScrollButtons />
       <div className="max-w-[1300px] mx-auto py-[3.3rem]">{props.children}</div>
       {props.showFooter && (

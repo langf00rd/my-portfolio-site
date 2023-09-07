@@ -3,7 +3,6 @@ import MainLayout from "~/layouts/main.layout";
 import { motion } from "framer-motion";
 import BlogLayout from "~/layouts/blog.layout";
 import { BLOG_POSTS } from "~/constants/data.const";
-import { useRouter } from "next/router";
 
 export default function Blog(): JSX.Element {
   return (
