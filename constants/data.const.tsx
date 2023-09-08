@@ -257,11 +257,11 @@ export const MAIN_CONTENT: { left: JSX.Element; right: JSX.Element }[] = [
           app development
         </p>
         <p>
-          With a deep love for coding and problem-solving, I thrive on creating innovative
+          with a deep love for coding and problem-solving, I thrive on creating innovative
           solutions that address real-world challenges.
         </p>
         <p>
-          My journey as a developer has been marked by a commitment to continuous learning
+          my journey as a developer has been marked by a commitment to continuous learning
           and a dedication to delivering exceptional results. Let&apos;s connect and
           explore how I can contribute to your next project.
         </p>

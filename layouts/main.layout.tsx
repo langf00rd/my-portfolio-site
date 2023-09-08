@@ -27,7 +27,7 @@ export default function MainLayout(props: {
             router.pathname === "/" && "border-none"
           }`}
         >
-          made 💙 with by
+          made with 💙 by
           <Link
             rel="noreferrer"
             target="_blank"
