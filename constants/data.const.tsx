@@ -66,6 +66,12 @@ export const PROJECTS: {
   link?: string;
 }[] = [
   {
+    title: "dazzl",
+    image: "/assets/images/projects/dazzl.png",
+    link: "https://dazzl.pro",
+    description: "minimal website builder",
+  },
+  {
     title: "vapourware studios",
     image: "/assets/images/projects/vapourware-studios.png",
     link: "https://www.vapourwarestudios.co/",
@@ -367,7 +373,7 @@ export const MAIN_CONTENT: { left: JSX.Element; right: JSX.Element }[] = [
                 alt={`screenshot of ${project.title} project`}
                 width={600}
                 height={600}
-                className="object-contain rounded-2xl bg-[#F2F2F2]"
+                className="object-contain rounded-2xl bg-[#F2F2F2] border"
               />
             </Link>
           </li>
