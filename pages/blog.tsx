@@ -2,7 +2,7 @@ import Link from "next/link";
 import MainLayout from "~/layouts/main.layout";
 import { motion } from "framer-motion";
 import BlogLayout from "~/layouts/blog.layout";
-import { BLOG_POSTS } from "~/constants/data.const";
+import { BLOG_POSTS } from "~/constants/siteDate.const";
 
 export default function Blog(): JSX.Element {
   return (

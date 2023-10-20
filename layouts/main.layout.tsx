@@ -20,7 +20,7 @@ export default function MainLayout(props: {
       <Meta title={props.metaTitle || "langford - software developer"} />
       <Analytics />
       <ScrollButtons />
-      <div className="max-w-[1300px] mx-auto py-[3.3rem]">{props.children}</div>
+      <div className="max-w-[1000px] mx-auto py-[3.3rem]">{props.children}</div>
       {props.showFooter && (
         <footer
           className={`text-sm text-textGrey flex items-center justify-center py-5 pb-20 border-t border-t-[#f2f2f2] ${

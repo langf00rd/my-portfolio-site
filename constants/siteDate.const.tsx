@@ -1,19 +1,16 @@
 import Link from "next/link";
-import { FiArrowUpRight, FiGithub } from "react-icons/fi";
+import { FiGithub } from "react-icons/fi";
 import { FaDev, FaInstagram } from "react-icons/fa";
 import { RxTwitterLogo } from "react-icons/rx";
-import Image from "next/image";
 import { HiOutlineMail } from "react-icons/hi";
 import { BiMessageRounded } from "react-icons/bi";
 import { BsArrowRight } from "react-icons/bs";
-import { motion } from "framer-motion";
+import { IBlogPost, ISocial, JobExperience, Project } from "~/interface";
+import ProjectCard from "~/components/ProjectCard";
+import JobExperienceCard from "~/components/JobExperienceCard";
+import BlogPost from "~/components/BlogPost";
 
-export const BLOG_POSTS: {
-  date: string;
-  title: string;
-  page: string;
-  animationDuration: number;
-}[] = [
+export const BLOG_POSTS: IBlogPost[] = [
   {
     date: "06-09-2023",
     title: "so you want to become a developer...",
@@ -22,11 +19,7 @@ export const BLOG_POSTS: {
   },
 ];
 
-export const SOCIALS: {
-  label: string;
-  link: string;
-  icon: JSX.Element;
-}[] = [
+export const SOCIALS: ISocial[] = [
   {
     label: "github",
     link: "https://github.com/langford-dev",
@@ -59,12 +52,7 @@ export const SOCIALS: {
   },
 ];
 
-export const PROJECTS: {
-  title: string;
-  image: string;
-  description: string;
-  link?: string;
-}[] = [
+export const PROJECTS: Project[] = [
   {
     title: "dazzl",
     image: "/assets/images/projects/dazzl.png",
@@ -168,81 +156,72 @@ export const PROJECTS: {
   },
 ];
 
-export const JOB_EXPERIENCE: { companyName: string; jobTitle: string; years: string }[] =
-  [
-    {
-      companyName: "vapourware studios",
-      jobTitle: "co-founder & software developer",
-      years: "2018",
-    },
-    {
-      companyName: "desense co",
-      jobTitle: "software developer",
-      years: "2021",
-    },
-    {
-      companyName: "coral app",
-      jobTitle: "developer relations",
-      years: "2023",
-    },
-    {
-      companyName: "clever programmer",
-      jobTitle: "frontend web developer (web3)",
-      years: "2022",
-    },
-    {
-      companyName: "openwaver tech ltd",
-      jobTitle: "lead frontend developer (web3)",
-      years: "2021",
-    },
-    {
-      companyName: "tv anywhere africa",
-      jobTitle: "software developer",
-      years: "2022",
-    },
-    {
-      companyName: "kabb co",
-      jobTitle: "software developer",
-      years: "2023",
-    },
-    {
-      companyName: "hashnode",
-      jobTitle: "technical writer",
-      years: "2022",
-    },
-    {
-      companyName: "klick n build",
-      jobTitle: "frontend software developer",
-      years: "2022",
-    },
-  ];
+export const JOB_EXPERIENCE: JobExperience[] = [
+  {
+    companyName: "vapourware studios",
+    jobTitle: "co-founder & software developer",
+    years: "2018",
+  },
+  {
+    companyName: "desense co",
+    jobTitle: "software developer",
+    years: "2021",
+  },
+  {
+    companyName: "coral app",
+    jobTitle: "developer relations",
+    years: "2023",
+  },
+  {
+    companyName: "clever programmer",
+    jobTitle: "frontend web developer (web3)",
+    years: "2022",
+  },
+  {
+    companyName: "openwaver tech ltd",
+    jobTitle: "lead frontend developer (web3)",
+    years: "2021",
+  },
+  {
+    companyName: "tv anywhere africa",
+    jobTitle: "software developer",
+    years: "2022",
+  },
+  {
+    companyName: "kabb co",
+    jobTitle: "software developer",
+    years: "2023",
+  },
+  {
+    companyName: "hashnode",
+    jobTitle: "technical writer",
+    years: "2022",
+  },
+  {
+    companyName: "klick n build",
+    jobTitle: "frontend software developer",
+    years: "2022",
+  },
+];
 
 export const SKILLS = [
-  "next js",
-  "react js",
-  "redux",
-  "express",
-  "javascript",
-  "heroku",
-  "vue js",
-  "html",
-  "css",
+  "react js, next js",
   "typescript",
-  "flutter",
+  "prisma",
+  "redux, zustand",
+  "node js, express",
+  "javascript",
+  "tdd",
+  "vue js",
+  "ci/cd",
+  "html",
+  "css, tailwind css",
   "electron",
   "react native",
-  "dart",
-  "tailwind css",
-  "bootstrap",
+  "flutter, dart",
   "firebase",
-  "astro",
-  "thirdweb",
-  "moralis",
   "mongo db",
-  "web3 js",
-  "git",
-  "ethers js",
-  "node js",
+  "ethers js, web3 js",
   "responsive design",
   "smart contract integration",
   "technical writing",
@@ -254,6 +233,9 @@ export const MAIN_CONTENT: { left: JSX.Element; right: JSX.Element }[] = [
       <div className="grid gap-2">
         <h2 className="text-xl">langford kwabena</h2>
         <p className="text-textGrey">software developer</p>
+        <Link href="/cv">
+          <p className="text-black underline">read my cv &rarr;</p>
+        </Link>
       </div>
     ),
     right: (
@@ -294,21 +276,7 @@ export const MAIN_CONTENT: { left: JSX.Element; right: JSX.Element }[] = [
       <>
         <ul className="">
           {BLOG_POSTS.map((post, index: number) => (
-            <motion.li
-              initial={{ opacity: 0, x: -3 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: post.animationDuration }}
-              className="w-full"
-              key={index}
-            >
-              <Link
-                href={post.page}
-                className="py-2 w-full block flex items-center gap-2"
-              >
-                <p className="hidden md:block">{post.date}</p>
-                <p className="text-black">{post.title}</p>
-              </Link>
-            </motion.li>
+            <BlogPost data={post} key={index} />
           ))}
         </ul>
         <Link
@@ -326,13 +294,7 @@ export const MAIN_CONTENT: { left: JSX.Element; right: JSX.Element }[] = [
     right: (
       <ul className="grid md:grid-cols-2">
         {JOB_EXPERIENCE.map((job, index) => (
-          <li key={index} className="pb-5 mb-5 grid gap-2">
-            <div>
-              <h2>{job.companyName}</h2>
-              <h2>{job.jobTitle}</h2>
-            </div>
-            <p className="text-textGrey">{job.years}</p>
-          </li>
+          <JobExperienceCard data={job} key={index} />
         ))}
       </ul>
     ),
@@ -354,29 +316,7 @@ export const MAIN_CONTENT: { left: JSX.Element; right: JSX.Element }[] = [
     right: (
       <ul className="grid gap-10">
         {PROJECTS.map((project, index) => (
-          <li key={index}>
-            <Link
-              className="grid gap-3 transition-all"
-              href={project.link || ""}
-              rel="noreferrer"
-              target="_blank"
-            >
-              <div className="flex items-center">
-                <h2 className="mr-2 text-black hover:text-brand transition-all">
-                  {project.title}
-                </h2>
-                <FiArrowUpRight className="ml-1 text-textGrey" />
-              </div>
-
-              <Image
-                src={project.image}
-                alt={`screenshot of ${project.title} project`}
-                width={600}
-                height={600}
-                className="object-contain rounded-2xl bg-[#F2F2F2] border"
-              />
-            </Link>
-          </li>
+          <ProjectCard data={project} key={index} />
         ))}
       </ul>
     ),

@@ -1,5 +1,5 @@
 import MainLayout from "~/layouts/main.layout";
-import { MAIN_CONTENT } from "~/constants/data.const";
+import { MAIN_CONTENT } from "~/constants/siteDate.const";
 
 export default function Home() {
   return (
