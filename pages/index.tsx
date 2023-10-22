@@ -1,27 +1,26 @@
-import MainLayout from "~/layouts/main.layout";
-import { MAIN_CONTENT } from "~/constants/siteDate.const";
+import { MAIN_CONTENT } from '~/constants/content';
 
 export default function Home() {
   return (
-    <MainLayout metaTitle="langford - software developer" showFooter>
-      <div className="grid gap-[80px]">
+    <main className='max-w-[1000px] mx-auto py-[3.3rem]'>
+      <div className='grid gap-[80px]'>
         {MAIN_CONTENT.map((content, index) => (
           <div
             key={index}
             className={`md:flex grid gap-5 pb-20 justify-between ${
-              index !== MAIN_CONTENT.length - 1 && "border-b"
+              index !== MAIN_CONTENT.length - 1 && 'border-b'
             }`}
           >
-            <div className="flex-1 md:sticky md:top-[70px] md:h-max">{content.left}</div>
-            <div className="flex-1">{content.right}</div>
+            <div className='flex-1 md:sticky md:top-[70px] md:h-max'>{content.left}</div>
+            <div className='flex-1'>{content.right}</div>
           </div>
         ))}
       </div>
-      <div className="mt-5 text-center py-20 text-xl md:text-[2.3rem] rounded-[2rem] leading-[60px]">
+      <div className='text-center py-5 text-xl md:text-[2.3rem] rounded-[2rem] leading-[60px]'>
         <h1>
-          let&apos;s build something <span className="gradient-text">cool</span> ツ
+          let&apos;s build something <span className='gradient-text'>cool</span> ツ
         </h1>
       </div>
-    </MainLayout>
+    </main>
   );
 }

@@ -1,0 +1,66 @@
+import BlogLayout from '../../layouts/blogLayout';
+
+<BlogLayout title='introducing tinyzod - a typesafe tinybird nodejs client' subtitle='tinybird is undoubtedly one of the best analytics tools out there...'>
+
+# introducing tinyzod - a typesafe tinybird nodejs client
+
+tinybird is undoubtedly one of the best analytics tools out there. sadly, i find its usage a bit...stressing. why is that? let me first put this out there, the tinybird api is very good. its just a pain having to look for that one single endpoint i use to send events to my datasource every single time i need it. which is why i wrote [tinyzod](https://github.com/langf00rd/tinyzod). all the endpoints i need, accessible from designated function. no more scrolling through long lists of documentation
+
+## what is tinyzod?
+
+it's a typesafe tinybird client package that lets you use tinybird's apis from your nodejs
+app without having to call their endpoints manually everytime.
+
+tinyzod:
+
+- is small in size (< 53kb)
+- request caching and revalidation
+- tree-shakable to reduce bundle size
+- requires minimal setup, and has some pretty cool features under
+  the hood.
+
+## you mentioned validation?
+
+yes, tinyzod has built-in support for [zod](https://zod.dev). i'm working on adding support for other validation libraries like yup, etc
+
+> tinyzod is [opensource](https://github.com/langf00rd/tinyzod). looking forward to your feedback and contributions :)
+
+## usage
+
+it's dead simple. initialize the tinyzod client, pass in your tinybird token, call the functions you need with the required parameters.
+
+```ts
+import { z } from 'zod';
+import { TinyZodClient, publishToDatasource, queryPipeWithDynamicParam } from 'tinyzod';
+
+// initialize the tinyzod client
+const tz = new TinyZodClient({
+  showLogs: true,
+  token: 'TINYBIRD-TOKEN',
+  /* other config */
+});
+
+// create your schema
+const schema = z.object({
+  id: z.number(),
+  value: z.string(),
+  date: z.string(),
+  message: z.string(),
+});
+
+// publish an event to a datasource
+const publish_ = await publishToDatasource({
+  schema,
+  client: tz,
+  validator: 'zod',
+  datasource: 'demo__v1',
+  mode: 'append',
+  data: {
+    /* some data */
+  },
+});
+```
+
+thanks for reading. see you in the next article. feel free to connect with me on [twitter(x)](https://x.com/langf00rd)
+
+</BlogLayout>

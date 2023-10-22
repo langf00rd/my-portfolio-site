@@ -15,7 +15,6 @@ export interface IBlogPost {
   date: string;
   title: string;
   page: string;
-  animationDuration: number;
 }
 
 export interface ISocial {
