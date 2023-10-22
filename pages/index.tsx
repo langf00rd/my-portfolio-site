@@ -1,4 +1,3 @@
-import Footer from '~/components/Footer';
 import { MAIN_CONTENT } from '~/constants/content';
 
 export default function Home() {

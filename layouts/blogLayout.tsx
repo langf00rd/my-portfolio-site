@@ -1,4 +1,4 @@
-import { ReactNode, useEffect } from 'react';
+import { ReactNode } from 'react';
 import BackButton from '~/components/BackButton';
 import Meta from '~/components/Meta';
 import ScrollButtons from '~/components/ScrollButtons';
