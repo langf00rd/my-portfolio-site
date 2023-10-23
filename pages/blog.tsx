@@ -10,6 +10,7 @@ export default function Blog(): JSX.Element {
       <Meta title='my blog' />
       <main className='max-w-2xl mx-auto space-y-5 p-5'>
         <BackButton />
+        <h1>my blog</h1>
         <ul>
           {BLOG_POSTS.reverse().map((post, index: number) => (
             <motion.div

@@ -83,7 +83,14 @@ export const PROJECTS: Project[] = [
       'a free mint storytelling nft project aimed at onboarding newbies into the web3 ecosystem',
   },
   {
-    title: 'brylluslisten',
+    title: 'istream',
+    image: '/assets/images/projects/istream.webp',
+    link: 'https://istream.ng/',
+    description:
+      'The wedding list is a wishlist that allows you to gather your wishes in one place and easily share the list with the wedding guests',
+  },
+  {
+    title: 'bryllupslisten',
     image: '/assets/images/projects/byllupslisten.png',
     link: 'https://bryllupslisten.no/',
     description:
