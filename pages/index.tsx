@@ -2,7 +2,7 @@ import { MAIN_CONTENT } from '~/constants/content';
 
 export default function Home() {
   return (
-    <main className='max-w-[1000px] mx-auto py-[3.3rem]'>
+    <main className='max-w-[1000px] mx-auto py-[3.3rem] px-5'>
       <div className='grid gap-[80px]'>
         {MAIN_CONTENT.map((content, index) => (
           <div
