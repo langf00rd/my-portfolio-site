@@ -269,6 +269,7 @@ export const SKILLS = [
    "react native",
    "flutter, dart",
    "firebase",
+   "shopify",
    "mongo db",
    "ethers js, web3 js",
    "responsive design",
