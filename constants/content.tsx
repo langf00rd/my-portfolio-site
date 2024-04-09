@@ -45,19 +45,14 @@ export const BLOG_POSTS: IBlogPost[] = [
 
 export const SOCIALS: ISocial[] = [
   {
+    label: "mail",
+    link: "mailto:langfordquarshie21@gmail.com",
+    icon: <HiOutlineMail size={20} />,
+  },
+  {
     label: "github",
     link: "https://github.com/langf00rd",
     icon: <FiGithub size={20} />,
-  },
-  {
-    label: "instagram",
-    link: "https://instagram.com/langf00rd",
-    icon: <FaInstagram size={20} />,
-  },
-  {
-    label: "dev.to",
-    link: "https://dev.to/langf00rd",
-    icon: <FaDev size={20} />,
   },
   {
     label: "x",
@@ -65,14 +60,14 @@ export const SOCIALS: ISocial[] = [
     icon: <RxTwitterLogo size={20} />,
   },
   {
-    label: "mail",
-    link: "mailto:langfordquarshie21@gmail.com",
-    icon: <HiOutlineMail size={20} />,
+    label: "dev.to",
+    link: "https://dev.to/langf00rd",
+    icon: <FaDev size={20} />,
   },
   {
-    label: "imessage",
-    link: "imessage:langfordquarshie@icloud.com",
-    icon: <BiMessageRounded size={20} />,
+    label: "instagram",
+    link: "https://instagram.com/langf00rd",
+    icon: <FaInstagram size={20} />,
   },
 ];
 
@@ -91,16 +86,16 @@ export const PROJECTS: Project[] = [
       "The wedding list is a wishlist that allows you to gather your wishes in one place and easily share the list with the wedding guests",
   },
   {
+    title: "bithub inc website",
+    image: "/assets/images/projects/bithub.png",
+    link: "https://bithubinc.com",
+    description: "",
+  },
+  {
     title: "offy eats app",
     image: "/assets/images/projects/offy-eats.png",
     link: "https://play.google.com/store/apps/details?id=com.mycompany.offy&hl=en_US&pli=1",
     description: "restaurants app in saudi arabia",
-  },
-  {
-    title: "bithub website",
-    image: "/assets/images/projects/bithub.png",
-    link: "https://bithubinc.com",
-    description: "",
   },
   {
     title: "magna nft",
@@ -128,25 +123,25 @@ export const PROJECTS: Project[] = [
     link: "https://pokkit.app",
     description: "finance management app",
   },
-  {
-    title: "wedey",
-    image: "/assets/images/projects/wedey.png",
-    link: "https://www.wedey.co/",
-    description: "we bringing the local markets to you",
-  },
+  // {
+  //   title: "wedey",
+  //   image: "/assets/images/projects/wedey.png",
+  //   link: "https://www.wedey.co/",
+  //   description: "we bringing the local markets to you",
+  // },
   {
     title: "mcini tv",
     image: "/assets/images/projects/mcini-tv.png",
     link: "https://mcini.tv/",
     description: "a web app for streaming movies",
   },
-  {
-    title: "waverpass nft",
-    image: "/assets/images/projects/waverpass.png",
-    link: "https://www.waverpass.com/",
-    description:
-      "1,000 passes available for mint, owning a Waver Pass grants holders access to products, tools and projects exclusively built and owned by Openwaver for free",
-  },
+  // {
+  //   title: "waverpass nft",
+  //   image: "/assets/images/projects/waverpass.png",
+  //   link: "https://www.waverpass.com/",
+  //   description:
+  //     "1,000 passes available for mint, owning a Waver Pass grants holders access to products, tools and projects exclusively built and owned by Openwaver for free",
+  // },
   {
     title: "netflix clone",
     image: "/assets/images/projects/netflix-clone.png",
@@ -178,13 +173,13 @@ export const PROJECTS: Project[] = [
     link: "https://nft-aio.vercel.app/",
     description: "a landing page for an nft project",
   },
-  {
-    title: "richfaith recruitment agency",
-    image: "/assets/images/projects/richfaith-recruitment-agency.png",
-    link: "https://richfaithrecruitment.com/",
-    description:
-      "a company that connects talented individuals to international opportunities in a variety of industries",
-  },
+  // {
+  //   title: "richfaith recruitment agency",
+  //   image: "/assets/images/projects/richfaith-recruitment-agency.png",
+  //   link: "https://richfaithrecruitment.com/",
+  //   description:
+  //     "a company that connects talented individuals to international opportunities in a variety of industries",
+  // },
   {
     title: "pro player",
     image: "/assets/images/projects/pro-player.png",
@@ -208,24 +203,9 @@ export const PROJECTS: Project[] = [
 
 export const JOB_EXPERIENCE: JobExperience[] = [
   {
-    companyName: "openwaver tech ltd",
-    jobTitle: "lead frontend developer (web3)",
-    years: "2021",
-  },
-  {
-    companyName: "offy eats",
-    jobTitle: "fullstack developer",
-    years: "2023",
-  },
-  {
     companyName: "tv anywhere africa",
     jobTitle: "software developer",
     years: "2022",
-  },
-  {
-    companyName: "vapourware studios",
-    jobTitle: "co-founder & software developer",
-    years: "2018",
   },
   {
     companyName: "desense co",
@@ -233,57 +213,69 @@ export const JOB_EXPERIENCE: JobExperience[] = [
     years: "2021",
   },
   {
-    companyName: "coral app",
-    jobTitle: "developer relations",
-    years: "2023",
-  },
-  {
-    companyName: "clever programmer",
-    jobTitle: "frontend web developer (web3)",
-    years: "2022",
-  },
-  {
-    companyName: "kabb co",
-    jobTitle: "software developer",
-    years: "2023",
-  },
-  {
     companyName: "hashnode",
     jobTitle: "technical writer",
     years: "2022",
+  },
+  {
+    companyName: "openwaver tech ltd",
+    jobTitle: "lead frontend developer (web3)",
+    years: "2021",
+  },
+  {
+    companyName: "offy eats",
+    jobTitle: "full-stack web & mobile engineer",
+    years: "2023",
   },
   {
     companyName: "klick n build",
     jobTitle: "frontend software developer",
     years: "2022",
   },
+  {
+    companyName: "coral app",
+    jobTitle: "developer relations (web3)",
+    years: "2023",
+  },
+  {
+    companyName: "vapourware studios",
+    jobTitle: "co-founder & software developer",
+    years: "2018",
+  },
+  // {
+  //   companyName: "clever programmer",
+  //   jobTitle: "frontend web developer (web3)",
+  //   years: "2022",
+  // },
+  // {
+  //   companyName: "kabb co",
+  //   jobTitle: "software developer",
+  //   years: "2023",
+  // },
 ];
 
 export const SKILLS = [
-  "react js, next js",
+  "react & next js",
   "typescript",
-  "prisma",
-  "redux, zustand",
-  "AWS, GCP",
-  "node js, express",
-  "javascript",
-  "TDD",
-  "SQL",
-  "vue js",
-  "CI/CD",
-  "redis",
-  "HTML",
-  "CSS, tailwind",
-  "electron",
+  "redux",
   "react native",
-  "rabbit MQ",
+  "AWS, GCP",
+  "postgres",
   "flutter, dart",
-  "firebase",
-  "shopify",
+  "HTML",
+  "node & express js",
+  "SQL & noSQL databases",
+  "CI/CD",
+  "tailwind CSS",
+  "javascript",
+  "electron",
   "mongo db",
-  "ethers js, web3 js",
-  "responsive design",
+  "firebase, supabase",
+  "prisma",
+  "ethers & web3 js",
   "technical writing",
+  "responsive design",
+  "shopify",
 ];
 
 export const MAIN_CONTENT: { left: JSX.Element; right: JSX.Element }[] = [
@@ -300,13 +292,18 @@ export const MAIN_CONTENT: { left: JSX.Element; right: JSX.Element }[] = [
     right: (
       <div className="grid gap-5">
         <p>
-          As a software engineer, I have a proven track record of delivering
-          apps to live users across the globe. I am passionate about
-          problem-solving and derive satisfaction from providing innovative
-          solutions to real-world issues. My unwavering commitment to continuous
-          learning and adaptability guarantees exceptional results for every
-          project, ensuring that the applications I create not only meet but
-          exceed users&apos;s expectations.
+          I&apos;m a software engineer with 6+ years of professional experience,
+          proficient in developing full-stack web applications, desktop
+          applications, cross-platform mobile applications (android & ios), and
+          web3 blockchain applications.
+          <div className="h-3" />
+          I&apos;m passionate about technical writing, creating tutorials,
+          how-to-guides, and documentation. I also share my expertise through
+          YouTube content ツ
+          <div className="h-3" />
+          I&apos;ve honed my skills working for various global companies,
+          enabling me to deliver top-notch software solutions for diverse
+          clients.
         </p>
         <ul className="flex gap-5">
           {SOCIALS.map((social, index: number) => (
