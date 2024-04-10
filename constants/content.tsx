@@ -284,7 +284,7 @@ export const MAIN_CONTENT: { left: JSX.Element; right: JSX.Element }[] = [
       <div className="grid gap-2">
         <h2 className="text-xl">langford kwabena</h2>
         <p className="text-textGrey">software developer</p>
-        <Link href="/cv">
+        <Link href="/resume">
           <p className="text-black underline">read my cv &rarr;</p>
         </Link>
       </div>
@@ -292,10 +292,9 @@ export const MAIN_CONTENT: { left: JSX.Element; right: JSX.Element }[] = [
     right: (
       <div className="grid gap-5">
         <p>
-          I&apos;m a software engineer with 6+ years of professional experience,
-          proficient in developing full-stack web applications, desktop
-          applications, cross-platform mobile applications (android & ios), and
-          web3 blockchain applications.
+          Software engineer with over half a decade of professional experience
+          in web development, cross-platform mobile application development,
+          desktop application development and web3 application development
           <div className="h-3" />
           I&apos;m passionate about technical writing, creating tutorials,
           how-to-guides, and documentation. I also share my expertise through
