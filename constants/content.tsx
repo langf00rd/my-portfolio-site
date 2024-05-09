@@ -3,7 +3,6 @@ import { FiGithub } from "react-icons/fi";
 import { FaDev, FaInstagram } from "react-icons/fa";
 import { RxTwitterLogo } from "react-icons/rx";
 import { HiOutlineMail } from "react-icons/hi";
-import { BiMessageRounded } from "react-icons/bi";
 import { BsArrowRight } from "react-icons/bs";
 import { IBlogPost, ISocial, JobExperience, Project } from "~/interface";
 import ProjectCard from "~/components/ProjectCard";
@@ -77,6 +76,12 @@ export const PROJECTS: Project[] = [
     image: "/assets/images/projects/vapourware-studios.png",
     link: "https://www.vapourwarestudios.co/",
     description: "a website for a software and creative design agency",
+  },
+  {
+    title: "draxfit",
+    image: "/assets/images/projects/draxfit.png",
+    link: "https://draxfit.com/",
+    description: "a fitness company in korea",
   },
   {
     title: "bryllupslisten",
