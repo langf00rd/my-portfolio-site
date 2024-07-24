@@ -72,6 +72,12 @@ export const SOCIALS: ISocial[] = [
 
 export const PROJECTS: Project[] = [
   {
+    title: "teacher kofi tribute website",
+    image: "/assets/images/projects/teacher-kofi.png",
+    link: "https://www.teacherkofi.life/",
+    description: "a tribute website for the late teacher kofi",
+  },
+  {
     title: "vapourware studios",
     image: "/assets/images/projects/vapourware-studios.png",
     link: "https://www.vapourwarestudios.co/",
@@ -91,13 +97,19 @@ export const PROJECTS: Project[] = [
       "The wedding list is a wishlist that allows you to gather your wishes in one place and easily share the list with the wedding guests",
   },
   {
+    title: "wedey",
+    image: "/assets/images/projects/wedey.png",
+    link: "https://www.wedey.co/",
+    description: "we bringing the local markets to you",
+  },
+  {
     title: "bithub inc website",
     image: "/assets/images/projects/bithub.png",
     link: "https://bithubinc.com",
     description: "",
   },
   {
-    title: "offy eats app",
+    title: "offy eats mobile app",
     image: "/assets/images/projects/offy-eats.png",
     link: "https://play.google.com/store/apps/details?id=com.mycompany.offy&hl=en_US&pli=1",
     description: "restaurants app in saudi arabia",
@@ -128,12 +140,6 @@ export const PROJECTS: Project[] = [
     link: "https://pokkit.app",
     description: "finance management app",
   },
-  // {
-  //   title: "wedey",
-  //   image: "/assets/images/projects/wedey.png",
-  //   link: "https://www.wedey.co/",
-  //   description: "we bringing the local markets to you",
-  // },
   {
     title: "mcini tv",
     image: "/assets/images/projects/mcini-tv.png",
