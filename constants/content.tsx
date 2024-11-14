@@ -90,6 +90,12 @@ export const PROJECTS: Project[] = [
     description: "a fitness company in korea",
   },
   {
+    title: "wara gg",
+    image: "/assets/images/projects/wara-gg.png",
+    link: "https://www.wara.gg/",
+    description: "a korean startup that hosts gaming tournaments",
+  },
+  {
     title: "bryllupslisten",
     image: "/assets/images/projects/byllupslisten.png",
     link: "https://bryllupslisten.no/",
