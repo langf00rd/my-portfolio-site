@@ -245,11 +245,6 @@ export const JOB_EXPERIENCE: JobExperience[] = [
     years: "2023",
   },
   {
-    companyName: "klick n build",
-    jobTitle: "frontend software developer",
-    years: "2022",
-  },
-  {
     companyName: "coral app",
     jobTitle: "developer relations (web3)",
     years: "2023",
