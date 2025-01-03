@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FiGithub } from "react-icons/fi";
+import { FiExternalLink, FiGithub } from "react-icons/fi";
 import { FaDev, FaInstagram } from "react-icons/fa";
 import { RxTwitterLogo } from "react-icons/rx";
 import { HiOutlineMail } from "react-icons/hi";
@@ -293,12 +293,29 @@ export const SKILLS = [
 export const MAIN_CONTENT: { left: JSX.Element; right: JSX.Element }[] = [
   {
     left: (
-      <div className="grid gap-2">
-        <h2 className="text-xl">langford kwabena</h2>
-        <p className="text-textGrey">software developer</p>
-        <Link href="/resume">
-          <p className="text-black underline">read my cv &rarr;</p>
-        </Link>
+      <div className="flex flex-col justify-between md:h-[300px]">
+        <div className="space-y-2">
+          <h2 className="text-xl">langford kwabena</h2>
+          <p className="text-textGrey">software developer</p>
+        </div>
+        <div className="flex md:flex-col flex-wrap gap-2">
+          <Link
+            className="flex items-center gap-2"
+            target="_blank"
+            href="/resume"
+          >
+            <p className="text-black">my resume</p>
+            <FiExternalLink size={14} />
+          </Link>
+          <Link
+            className="flex items-center gap-2"
+            target="_blank"
+            href="https://blog.langford.lol"
+          >
+            <p className="text-black">my blog</p>
+            <FiExternalLink size={14} />
+          </Link>
+        </div>
       </div>
     ),
     right: (
@@ -333,25 +350,25 @@ export const MAIN_CONTENT: { left: JSX.Element; right: JSX.Element }[] = [
       </div>
     ),
   },
-  {
-    left: <h2 className="mb-4 text-xl md:mb-0">my blog</h2>,
-    right: (
-      <>
-        <ul>
-          {BLOG_POSTS.reverse().map((post, index: number) => (
-            <BlogPost data={post} _index={index / 10} key={index} />
-          ))}
-        </ul>
-        <Link
-          href="/blog"
-          className="mb-4 flex w-max items-center gap-2 text-black underline"
-        >
-          <p>read all</p>
-          <BsArrowRight />
-        </Link>
-      </>
-    ),
-  },
+  // {
+  //   left: <h2 className="mb-4 text-xl md:mb-0">my blog</h2>,
+  //   right: (
+  //     <>
+  //       <ul>
+  //         {BLOG_POSTS.reverse().map((post, index: number) => (
+  //           <BlogPost data={post} _index={index / 10} key={index} />
+  //         ))}
+  //       </ul>
+  //       <Link
+  //         href="/blog"
+  //         className="mb-4 flex w-max items-center gap-2 text-black underline"
+  //       >
+  //         <p>read all</p>
+  //         <BsArrowRight />
+  //       </Link>
+  //     </>
+  //   ),
+  // },
   {
     left: (
       <h2 className="mb-4 text-xl md:mb-0">experience &amp; work history</h2>

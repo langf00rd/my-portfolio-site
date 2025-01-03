@@ -7,7 +7,7 @@ export default function Home() {
         {MAIN_CONTENT.map((content, index) => (
           <div
             key={index}
-            className={`md:flex grid gap-5 pb-20 justify-between ${
+            className={`grid md:grid-cols-2 gap-5 pb-20 justify-between ${
               index !== MAIN_CONTENT.length - 1 && "border-b"
             }`}
           >
